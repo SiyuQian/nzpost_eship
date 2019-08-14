@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package>
+    <name>Nzpost_Eship</name>
+    <version>1.0.0.0</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">Open Software License (OSL)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>This extension allows for rate quotes as well as automated shipping.</summary>
+    <description>The eShip Magento Extension enables rates at checkout from NZ Post, CourierPost and Pace carriers.</description>
+    <notes>- Initial release&#xD;
+- Added rates at checkout for NZ Post, CourierPost and Pace</notes>
+    <authors><author><name>George Plummer</name><user>GeorgeSPlummer</user><email>george@shipit.click</email></author></authors>
+    <date>2015-12-07</date>
+    <time>04:05:38</time>
+    <contents><target name="mageetc"><dir name="modules"><file name="Nzpost_Eship.xml" hash="ff808ab78382d213031d2500e2c112b1"/></dir></target><target name="magecommunity"><dir name="Nzpost"><dir name="Eship"><dir name="Helper"><file name="Data.php" hash="17eeb733d16bed6271650f5c6b6fc843"/></dir><dir name="Model"><dir name="Carrier"><file name="Courierpost.php" hash="c3e6022fbe0948e12f87615fd5f8c127"/><file name="Nzpost.php" hash="2497af5f39f31d3d510232657dfcdf38"/><file name="Pace.php" hash="ad01636b208dcbcd35dfee9a20bbe810"/></dir></dir><dir name="etc"><file name="config.xml" hash="13cd082bb1c368ae648e9ca0badef2d2"/><file name="system.xml" hash="83a9fff946733711d2fad7bc20849dce"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="addressautocomplete.xml" hash="adc98852dff80e361a18424b13c4fa19"/></dir></dir></dir></dir></target><target name="mageskin"><dir name="frontend"><dir name="base"><dir name="default"><dir name="js"><dir name="eship"><file name="jquery-1.10.2.min.js" hash="628072e7212db1e8cdacb22b21752cda"/><file name="noconflict.js" hash="3179f2255b046d5f2e9a71e365287bef"/><file name="onstepcheckout.js" hash="8a1b1f958d18d517672685aa6079ce5a"/><file name="onstepcheckout_shipping.js" hash="06dbe6f2c7cd17b11312c76f3bafaf8c"/></dir></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>5.6.15</max></php></required></dependencies>
+</package>

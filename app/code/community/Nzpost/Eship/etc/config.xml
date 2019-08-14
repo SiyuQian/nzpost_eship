@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Nzpost_Eship>
+      <version>1.0.0.0</version>
+    </Nzpost_Eship>
+  </modules>
+  <adminhtml>
+    <acl>
+      <resources>
+        <admin>
+          <children>
+            <system>
+              <children>
+                <config>
+                  <children>
+                    <eship_options>
+                      <title>eShip Module Section</title>
+                    </eship_options>
+                  </children>
+                </config>
+              </children>
+            </system>
+          </children>
+        </admin>
+      </resources>
+    </acl>
+  </adminhtml>
+  <frontend>
+    <layout>
+      <updates>
+        <addressautocomplete>
+          <file>addressautocomplete.xml</file>
+        </addressautocomplete>
+      </updates>
+    </layout>
+  </frontend>
+  <global>
+    <models>
+      <ship>
+        <class>Nzpost_Eship_Model</class>
+        <resourceModel>ship_mysql4</resourceModel>
+      </ship>
+      <ship_mysql4>
+        <class>Nzpost_Eship_Model_Mysql4</class>
+        <entities>
+          <ship>
+            <table>ship</table>
+          </ship>
+        </entities>
+      </ship_mysql4>
+    </models>
+    <helpers>
+      <ship>
+        <class>Nzpost_Eship_Helper</class>
+      </ship>
+      <eship>
+        <class>Nzpost_Eship_Helper</class>
+      </eship>
+    </helpers>
+  </global>
+  <default>
+    <carriers>
+      <courierpost>
+        <active>0</active>
+        <model>ship/carrier_courierpost</model>
+        <title>CourierPost</title>
+        <name>Online Parcel</name>
+        <price>0.00</price>
+        <specificerrmsg>This shipping method is currently unavailable. If you would like to ship
+        using this shipping method, please contact us.</specificerrmsg>
+        <showmethod>1</showmethod>
+      </courierpost>
+      <nzpost>
+        <active>0</active>
+        <model>ship/carrier_nzpost</model>
+        <title>NZ Post</title>
+        <name>NZ Post</name>
+        <price>0.00</price>
+        <specificerrmsg>This shipping method is currently unavailable. If you would like to ship
+        using this shipping method, please contact us.</specificerrmsg>
+        <showmethod>1</showmethod>
+      </nzpost>
+      <pace>
+        <active>0</active>
+        <model>ship/carrier_pace</model>
+        <title>Pace</title>
+        <name>Same Day</name>
+        <price>0.00</price>
+        <specificerrmsg>This shipping method is currently unavailable. If you would like to ship
+        using this shipping method, please contact us.</specificerrmsg>
+        <showmethod>1</showmethod>
+      </pace>
+    </carriers>
+  </default>
+</config>

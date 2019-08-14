@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Nzpost_Eship>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Nzpost_Eship>
+    </modules>
+</config> 
