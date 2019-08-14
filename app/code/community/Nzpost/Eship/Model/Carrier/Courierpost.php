@@ -47,7 +47,7 @@ implements Mage_Shipping_Model_Carrier_Interface {
             $packageWeight = $request->getPackageWeight() * 1000; //Package Weight (grams)
             $packageCurrency = $request->getPackageCurrency();
             
-            $url = 'https://api.shipit.click/rate?apiKey=' . $eShipApiKey . '&integration=magento&format=json';
+            $url = 'https://api2.starshipit.com/rate?apiKey=' . $eShipApiKey . '&integration=magento&format=json&pickups=true';
             $post_data = '{
                             "rate": {
                               "origin": {
@@ -96,7 +96,6 @@ implements Mage_Shipping_Model_Carrier_Interface {
                             }
                           }';
             $contentLength = strlen($post_data);
-                              
             $ch = curl_init();
             curl_setopt($ch, CURLOPT_URL, $url);
             curl_setopt($ch, CURLOPT_HEADER, false);
@@ -106,7 +105,6 @@ implements Mage_Shipping_Model_Carrier_Interface {
             curl_setopt($ch, CURLOPT_POSTFIELDS, $post_data);
             $response = curl_exec($ch);
             curl_close($ch);
-        
             $json_obj = json_decode($response);
             $rates_obj = $json_obj->{'rates'};
                                    
