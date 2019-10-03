@@ -1,7 +1,7 @@
 {
-    "name": "OpenMageModuleFostering\/Nzpost_Eship",
+    "name": "openmage-module-fostering\/nzpost_eship",
     "type": "magento-module",
-    "license": "Open-Software-License-(OSL)",
+    "license": "OSL-3.0",
     "homepage": "",
     "description": "This extension allows for rate quotes as well as automated shipping.",
     "authors": [
