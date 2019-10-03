@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Nzpost_Eship",
+    "name": "OpenMageModuleFostering\/Nzpost_Eship",
     "type": "magento-module",
     "license": "Open-Software-License-(OSL)",
     "homepage": "",
     "description": "This extension allows for rate quotes as well as automated shipping.",
     "authors": [
-    {
-        "name": "George Plummer",
-        "email": "george@shipit.click"
-    }
-],
+        {
+            "name": "George Plummer",
+            "email": "george@shipit.click"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
